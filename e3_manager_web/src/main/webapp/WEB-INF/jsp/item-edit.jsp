@@ -11,6 +11,7 @@
 	            <td>
 	            	<a href="javascript:void(0)" class="easyui-linkbutton selectItemCat">选择类目</a>
 	            	<input type="hidden" name="cid" style="width: 280px;"></input>	
+	            	<input type="hidden" name="id" style="width: 280px;"></input>	
 	            </td>
 	        </tr>
 	        <tr>
@@ -100,7 +101,7 @@
 		
 		$("#itemeEditForm [name=itemParams]").val(paramJson);
 		
-		$.post("/rest/item/update",$("#itemeEditForm").serialize(), function(data){
+		$.post("/item/update",$("#itemeEditForm").serialize(), function(data){
 			if(data.status == 200){
 				$.messager.alert('提示','修改商品成功!','info',function(){
 					$("#itemEditWindow").window('close');

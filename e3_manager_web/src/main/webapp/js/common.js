@@ -124,7 +124,7 @@ var E3 = {
     			    	var _win = this;
     			    	$("ul",_win).tree({
     			    		url:'/item/cat/list',
-    			    		animate:true,
+    			    		animate:true,	//动画效果
     			    		onClick : function(node){
     			    			if($(this).tree("isLeaf",node.target)){
     			    				// 填写到cid中
