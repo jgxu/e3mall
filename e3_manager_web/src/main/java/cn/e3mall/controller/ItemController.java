@@ -50,7 +50,6 @@ public class ItemController {
 		E3Result result = itemService.addItem(item, desc);
 		return result;
 	}
-	
 	@RequestMapping("/item/update")
 	@ResponseBody
 	public E3Result updateItem(TbItem item, String desc){

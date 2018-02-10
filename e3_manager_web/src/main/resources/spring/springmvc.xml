@@ -36,4 +36,7 @@
 	<dubbo:registry address="192.168.25.126:2181" protocol="zookeeper"></dubbo:registry>
 	<dubbo:reference interface="cn.e3mall.service.ItemService" id="itemService"></dubbo:reference>
 	<dubbo:reference interface="cn.e3mall.service.ItemCatService" id="itemCatService"></dubbo:reference>
+	<dubbo:reference interface="cn.e3mall.content.service.ContentCategoryService" id="contentCategoryService"></dubbo:reference>
+	<dubbo:reference interface="cn.e3mall.content.service.ContentService" id="contentService"></dubbo:reference>
+	<dubbo:reference interface="cn.e3mall.search.service.SearchItemService" id="searchItemService"></dubbo:reference>
 </beans>

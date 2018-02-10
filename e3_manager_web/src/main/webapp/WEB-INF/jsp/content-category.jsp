@@ -15,7 +15,9 @@ $(function(){
 		url : '/content/category/list',
 		animate: true,
 		method : "GET",
+		//右键选项菜单
 		onContextMenu: function(e,node){
+			//取消系统默认右键菜单
             e.preventDefault();
             $(this).tree('select',node.target);
             $('#contentCategoryMenu').menu('show',{
